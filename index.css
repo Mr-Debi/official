@@ -334,7 +334,7 @@ body
     margin: 1;
     margin-bottom: 4vh;
     padding: 0;
-    color: royalblue;
+    color: #fff;
     text-align: center;
 
 }
@@ -385,7 +385,7 @@ body
 }
 
 .contact a {
-    color: #ffffff;
+    color: royalblue;
     font-size: 24px;
     text-decoration: none;
     /* margin: 7vh; */
