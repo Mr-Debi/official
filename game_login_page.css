@@ -1,0 +1,49 @@
+body{
+	background-image:url("images/ryan-astley-nza4.jpg");
+	background-repeat:no-repeat;
+	background-position:left-bottom;
+	background-size:100% 130%;
+}
+
+.logo img{
+	float:upper-left;
+	width:65px;
+	height: auto;
+}
+
+h1{
+	width:100%;
+	font-size:90px;
+	color:red;
+	font-family:Lato;
+	text-align:center;
+	margin-top:30px;
+	text-shadow:-5px 4px 6px white;
+}
+
+h2{
+	width:100%;
+	color:yellow;
+	font-size:30px;
+	font-family:Lato;
+	margin-top:20px;
+	text-align:center;
+	text-shadow:-4px 3px 3px green;
+}
+
+.form{
+	color:white;
+	box-sizing:30%;
+}
+
+.container{
+	text-align:center;
+	padding-top:10px;
+	color:yellow;
+}
+
+.footer{
+	text-align:center;
+	padding-top:5px;
+	color:blue;
+}

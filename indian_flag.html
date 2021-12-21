@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Independence Day | 2021</title>
+    <link rel="stylesheet" type="text/css" href="indian_flag.css">
+
+    <link rel="shortcut icon" href="images/King_DD.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/King_DD.png">
+</head>
+<body>
+    <div class="flag">
+        <img src="images/chakra.png">
+    </div>
+
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.01" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0;0.02;0.05;0.02;0;" repeatCount="indefinite"></animate>
+            </feTurbulence>
+
+            <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+        </filter>
+    </svg> 
+
+</body>
+</html>

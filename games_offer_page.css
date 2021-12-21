@@ -1,0 +1,63 @@
+body{
+	background-image: url("images/zombie-army-trilogy-left-4-dead.jpg");
+	background-repeat:no-repeat;
+	background-position: left-bottom;
+	background-size: 100% 110vh;
+}
+
+.logo img{
+	float:upper-left;
+	width:65px;
+	height: auto;
+}
+h1{
+	width:100%;
+	color:red;
+	font-family:Lato;
+	margin-top:0px;
+	font-size:90px;
+	text-align:center;
+	text-shadow:-5px 3px 2px pink;
+}
+h2{
+	font-size:40px;
+	color:blue;
+	text-align:center;
+	text-shadow:-3px 2px 2px gray;
+	/* margin-top:5px; */
+	font-family:Lato;
+}
+table{
+	font-family:Lato;
+	border-collapse:collapse;
+	width:70%;
+	text-align:center;
+	/* margin-top:0px; */
+	color:black;
+}
+th{
+	font-size:30px;
+	text-align:left;
+	padding:7px;
+	background-color:orange;
+}
+td{
+	font-size:25px;
+	text-align:left;
+	padding:7px;
+}
+tr:nth-child(odd){
+	background-color:green;
+}
+tr:nth-child(even){
+	background-color:cyan;
+}
+.container{
+	text-align:center;
+	padding-top:10px;
+	color: blue;
+}
+.footer{
+	text-align:center;
+	color:green;
+}

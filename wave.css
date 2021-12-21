@@ -1,0 +1,128 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(10deg,red,orange, #e5aa1d,brown,black );
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section .wave
+{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(images/wave.png);
+    animation: animate 10s linear infinite;
+}
+
+section .wave:before
+{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(images/wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation: animate reverse 10s linear infinite;
+
+}
+
+section .wave:after
+{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(images/wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 1360px;
+    }
+}
+
+@keyframes reverce
+{
+    0%
+    {
+        background-position: 1360px;
+
+    }
+    100%
+    {
+        background-position: 0;
+    }
+}
+
+.boat
+{
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.b1, .b2
+{
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.boat img
+{
+    position: relative;
+    width: 400px;
+    height: 300px;
+
+}
+.b2 img{
+    height: 500px;
+}
+#chi{
+    height: 400px;
+}
+#chi2{
+    height: 200px;
+}
+#chi3{
+    height: 100px;
+}
+#f1{
+    height: 200px;
+    width: 300px;
+}
+#f2{
+    height: 400px;
+    width: 600px;
+}

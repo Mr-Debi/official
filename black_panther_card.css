@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: blackpanther;
+    src: url(black_panther_font.ttf);
+    
+}
+
+@font-face {
+    font-family: wakanda;
+    src: url(Wakanda_font.ttf);
+    
+}
+
+body{
+    height: 100vh;
+    font-family: blackpanther;
+    background: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.card{
+    height: 270px;
+    min-width: 250px;
+    width: 470px;
+    background: linear-gradient(45deg, #0c0200, #2f3131);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: aliceblue;
+
+}
+
+.card img{
+    height: 370px;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-40%, -50%);
+    transition: all 0.2s;
+
+
+}
+
+.card h2 ,h3{
+    margin-top: 20px;
+    color: #e5aa1d;
+    transition: all 0.2s;
+    letter-spacing: 2px;
+}
+
+.card p, a{
+    font-family: "Source Sans Pro", sans-serif;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.card p{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card h3{
+    /* font-family: wakanda; */
+    opacity: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.b{
+    font-family: blackpanther;
+    opacity: 1;
+    font-weight: normal;
+}
+
+.c{
+    font-family: wakanda;
+    opacity: 1;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        transform-origin: left;
+        filter: blur(10px)
+    }
+    100%{
+        opacity: 1;
+        /* transform: rotateY(0deg); */
+        filter: blur(0);
+    }
+}
+
+.card :hover h3{
+    opacity: 1;
+    animation: animate 2s linear backwards;
+    animation-delay: auto;
+    
+}
+
+.card a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0c0200;
+    background-color: #e5aa1d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card a:hover{
+    color: #0c0200;
+    background-color: #fff;
+    margin-top: 30px;
+
+    
+}
+
+.card:hover img{
+    left: 85%;
+    top: 40%;
+    height: 410px;
+}
+
+.card:hover h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.card:hover p,
+.card:hover a{
+    opacity: 1;
+}

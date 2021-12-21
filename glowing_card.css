@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #010615;
+
+}
+
+
+.box
+{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: 0.5s;
+     
+}
+
+.box:hover
+{
+    height: 600px;
+}
+
+.box .img_box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box .img_box img
+{
+    max-width: 100%;
+    opacity: 0.1;
+    transform: 0.5s;
+}
+
+.box:hover .img_box img
+{
+    opacity: 1;
+}
+
+.box::before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box::after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -20px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box::before,
+.box::after
+{
+    background: linear-gradient(230deg, #89ff00,#00bc,#00bcd4,#01df45,#890075);
+    animation: animate 5s linear infinite;
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after
+{
+    background: linear-gradient(230deg, #ff005e,#890075,#772aff,#89ff00,#00bcd4);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after
+{
+    background: linear-gradient(230deg, #772aff,#89ff00,#ff005e,#890075,#00bcd4);
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform:rotateY(90deg);
+    }
+    50%
+    {
+        transform:rotateY(180deg);
+        opacity: 0;
+    }
+    51%
+    {
+        transform: rotateX(270deg);
+    } 
+    100%
+    {
+        transform: rotateX(360deg);
+    } 
+}
+
+.box .content
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgb(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: 0.5s;
+}
+
+.box:hover .content
+{
+    opacity: 1;
+}
+
+.box .content h2
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 1px;
+
+}
+
+.box .content h2 span
+{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1px;
+
+}
