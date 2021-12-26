@@ -12,6 +12,11 @@
     <link rel="apple-touch-icon" href="images/King_DD.png">
 </head>
 <body>
+    <!-- scroll bar -->
+    <div id="preogressbar"></div>
+    <div id="scrollpath"></div>
+    <!-- scroll bar end -->
+    
     <div class="box">
         <div class="img_box">
             <img src="images/pic.jpg">
@@ -132,5 +137,17 @@
         </div>
 
     </div>
+    
+    <script type="text/javascript">
+        var preogressbar = document.getElementById("preogressbar");
+        var percent = document.getElementById("percent");
+
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            var progress = (window.pageYOffset / totalHeight) * 100;
+            preogressbar.style.height = progress + "%";
+        }
+
+    </script>
 </body>
 </html>
