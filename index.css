@@ -374,8 +374,38 @@ body
 }
 /* list end */
 
+/* contact start */
+.contact{
+    margin-bottom: 7vh;
+}
+
+.contact a {
+    color: royalblue;
+    font-size: 24px;
+    text-decoration: none;
+    /* margin: 7vh; */
+    margin-left: 15%;
+}
+/* contact end */
+
+/* resume start */
+.resume{
+    margin-bottom: 5vh;
+}
+.resume a{
+    margin-top: 5vh;
+    text-decoration: none;
+    color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+/* resume end */
+
+/* --------------------------- */
 /* mail start */
-/* .mail{
+.mail{
     position: absolute;
     top: 100%;
     left: 50%;
@@ -434,49 +464,19 @@ body
     font-weight: 900;
     font-size:17px;
     cursor: pointer;
-} */
+}
 /* mail end */
-
-/* contact start */
-.contact{
-    margin-bottom: 7vh;
-}
-
-.contact a {
-    color: royalblue;
-    font-size: 24px;
-    text-decoration: none;
-    /* margin: 7vh; */
-    margin-left: 15%;
-}
-/* contact end */
-
-/* resume start */
-.resume{
-    margin-bottom: 5vh;
-}
-.resume a{
-    margin-top: 5vh;
-    text-decoration: none;
-    color: yellowgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-/* resume end */
+/* ---------------------------- */
 
 /* mail 2 */
 
-section{
+/* section{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background: linear-gradient(to bottom, #f1f4f9, #dff1ff); */
 }
 
-/* for form */
 .mini_box{
     position: relative;
 }
@@ -603,8 +603,6 @@ section{
     cursor: pointer;
     margin-bottom: 20px;
     font-weight: 600;
-}
-
-/* for form end */
+} */
 
 /* mail 2 end */
