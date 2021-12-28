@@ -25,7 +25,7 @@ body{
     top: 0;
     right: 0;
     width: 10px;
-    height: 50%;
+    height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: barline 5s linear infinite;
 }
